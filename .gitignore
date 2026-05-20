@@ -1,0 +1,17 @@
+# Workspace runtime outputs
+workspace/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Temporary debug/log files
+*_temp.txt
+*_err.txt
+*_output.txt
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

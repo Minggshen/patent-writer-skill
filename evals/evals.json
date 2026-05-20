@@ -6,7 +6,19 @@
       "name": "微电网优化调度项目专利撰写",
       "prompt": "我正在做一个微电网优化调度的项目，项目代码在 d:/microgrid_scheduling/ 目录下。项目里实现了基于改进粒子群算法的日前调度优化，还用场景分析法处理了新能源出力不确定性，另外还有冷热电联供的建模。请帮我从这个项目里提取技术创新点，拔高后撰写一份专利技术交底书。",
       "expected_output": "一份完整的专利初稿Word文档，包含：1)专利名称 2)应用领域 3)技术问题 4)现有技术不足 5)详细技术方案（含公式和流程图） 6)附图列表 7)有益效果。技术方案应包含改进粒子群算法、场景分析法、冷热电联供建模三个创新点的升华表达。",
-      "assertions": [],
+      "assertions": [
+        {"type": "contains_section", "value": "本专利的应用领域"},
+        {"type": "contains_section", "value": "本专利的任务是什么，或要解决的技术问题是什么"},
+        {"type": "contains_section", "value": "已有技术/产品的不足"},
+        {"type": "contains_section", "value": "本专利的内容"},
+        {"type": "contains_section", "value": "附图或图表"},
+        {"type": "contains_section", "value": "本专利的效果"},
+        {"type": "contains_keyword", "value": "粒子群"},
+        {"type": "contains_keyword", "value": "场景分析"},
+        {"type": "contains_keyword", "value": "冷热电联供"},
+        {"type": "contains_keyword", "value": "图1"},
+        {"type": "min_word_count", "value": 2000}
+      ],
       "files": []
     },
     {
@@ -14,7 +26,20 @@
       "name": "变压器故障诊断深度学习项目专利撰写",
       "prompt": "我们的团队开发了一套变压器故障诊断系统，代码主要包含三部分：振动信号的小波包分解去噪、多传感器融合的特征提取模块、以及一个改进的CNN-BiLSTM-Attention分类网络。实验结果表明准确率比传统方法提升了12%。请帮我挖掘这些技术方案中的创新点，并按照专利交底书格式写一份专利初稿。",
       "expected_output": "一份完整的专利初稿Word文档，包含：1)专利名称 2)应用领域 3)技术问题 4)现有技术不足 5)详细技术方案（含小波包分解、多传感器融合、CNN-BiLSTM-Attention网络的数学描述和流程图） 6)附图列表 7)有益效果（含准确率提升12%的量化数据）。",
-      "assertions": [],
+      "assertions": [
+        {"type": "contains_section", "value": "本专利的应用领域"},
+        {"type": "contains_section", "value": "本专利的任务是什么，或要解决的技术问题是什么"},
+        {"type": "contains_section", "value": "已有技术/产品的不足"},
+        {"type": "contains_section", "value": "本专利的内容"},
+        {"type": "contains_section", "value": "附图或图表"},
+        {"type": "contains_section", "value": "本专利的效果"},
+        {"type": "contains_keyword", "value": "小波包"},
+        {"type": "contains_keyword", "value": "CNN"},
+        {"type": "contains_keyword", "value": "BiLSTM"},
+        {"type": "contains_keyword", "value": "故障诊断"},
+        {"type": "contains_keyword", "value": "12%"},
+        {"type": "min_word_count", "value": 2000}
+      ],
       "files": []
     },
     {
@@ -22,7 +47,20 @@
       "name": "光伏发电预测项目专利撰写",
       "prompt": "我手上有一个光伏电站短期功率预测的项目工程。项目用VMD把光伏出力历史数据分解成了多个模态分量，然后按晴空、多云、阴雨三种天气类型分别建模，预测模型用的是Transformer-LSTM混合网络，超参用贝叶斯优化调的。数据预处理部分还有一个基于辐照度突变检测的异常数据清洗算法。想把这些技术点整理成一篇专利，帮我写一份技术交底书。",
       "expected_output": "一份完整的专利初稿Word文档，包含：1)专利名称 2)应用领域 3)技术问题 4)现有技术不足 5)详细技术方案（含VMD分解、多天气场景分类建模、Transformer-LSTM网络、贝叶斯超参优化、异常数据清洗的数学描述和流程图） 6)附图列表 7)有益效果。",
-      "assertions": [],
+      "assertions": [
+        {"type": "contains_section", "value": "本专利的应用领域"},
+        {"type": "contains_section", "value": "本专利的任务是什么，或要解决的技术问题是什么"},
+        {"type": "contains_section", "value": "已有技术/产品的不足"},
+        {"type": "contains_section", "value": "本专利的内容"},
+        {"type": "contains_section", "value": "附图或图表"},
+        {"type": "contains_section", "value": "本专利的效果"},
+        {"type": "contains_keyword", "value": "VMD"},
+        {"type": "contains_keyword", "value": "Transformer"},
+        {"type": "contains_keyword", "value": "LSTM"},
+        {"type": "contains_keyword", "value": "贝叶斯"},
+        {"type": "contains_keyword", "value": "光伏"},
+        {"type": "min_word_count", "value": 2000}
+      ],
       "files": []
     }
   ]

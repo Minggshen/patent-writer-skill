@@ -9,7 +9,7 @@
 **方式一：git clone**
 
 ```bash
-git clone https://github.com/Minggshen/patent-writer-skill.git ~/.claude/skills/patent-writer
+git clone git@github.com:Minggshen/patent-writer-skill.git ~/.claude/skills/patent-writer
 ```
 
 **方式二：下载 ZIP**

@@ -6,11 +6,17 @@
 
 ## 安装
 
+**方式一：git clone**
+
 ```bash
-git clone https://github.com/Minggshen/patent-writer-skill.git "%USERPROFILE%\.claude\skills\patent-writer"
+git clone https://github.com/Minggshen/patent-writer-skill.git ~/.claude/skills/patent-writer
 ```
 
-安装到用户级 skills 目录，重启 Claude Code 后通过对话中的关键词即可触发，所有项目均可使用。
+**方式二：下载 ZIP**
+
+在仓库页面点击 Code → Download ZIP，解压到 `~/.claude/skills/patent-writer/`。
+
+安装到用户级 skills 目录后，重启 Claude Code 即可通过对话中关键词触发，所有项目均可使用。
 
 ## 工作方式
 

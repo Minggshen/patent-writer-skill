@@ -12,8 +12,6 @@ git clone https://github.com/Minggshen/patent-writer-skill.git "%USERPROFILE%\.c
 
 安装到用户级 skills 目录，重启 Claude Code 后通过对话中的关键词即可触发，所有项目均可使用。
 
-如果仓库为私有，需先在 GitHub 上设为公开，或使用 SSH 方式克隆。`npx skills add` 也可使用，但如安装后提示找不到 skill，请手动将文件移至 `%USERPROFILE%\.claude\skills\` 目录。
-
 ## 工作方式
 
 本技能分两个阶段工作，中间由用户决策：
